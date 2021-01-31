@@ -2,35 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" href="./media/bored.svg" type="image/x-icon">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>I'm bored af</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body onload="getData()">
+<body>
     <header class="text-gray-400 bg-gray-900 body-font">
         <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
           <nav class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
-            <!-- <a class="mr-5 hover:text-white">First Link</a>
-            <a class="mr-5 hover:text-white">Second Link</a>
-            <a class="mr-5 hover:text-white">Third Link</a>
-            <a class="hover:text-white">Fourth Link</a> -->
           </nav>
           <a class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-white lg:items-center lg:justify-center mb-4 md:mb-0">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-yellow-500 rounded-full" viewBox="0 0 24 24">
-              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-            </svg>
-            <span class="ml-3 text-xl xl:block lg:hidden">I'm bored</span>
+            <img width="45" src="./media/bored.svg" alt="">
+            <span class="ml-3 text-xl xl:block lg:hidden">I'm bored af</span>
           </a>
           <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
-            <button class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Button
+            <!-- <button class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Button
               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
                 <path d="M5 12h14M12 5l7 7-7 7"></path>
               </svg>
-            </button>
+            </button> -->
           </div>
         </div>
       </header>
+      <div class="centerCard">
+        <div class="place-self-center container max-w-xs rounded overflow-hidden shadow-lg my-2">
+            <img class="w-full" src="https://source.unsplash.com/1600x900/?nature,water,coding,india" alt="Card Image">
+            <div class="px-6 py-4">
+              <div id="activity" class="font-bold text-xl mb-2">Press bored button below</div>
+              <p id="paragraph" class="text-grey-darker text-base">This is a <span id="type"></span> activity and requires <span id="participants"></span> participant(s).</p>
+            </div>
+            <!-- <div class="px-6 py-4">
+              <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2"></span>
+              <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">Accessibility</span>
+              <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker">#winter</span>
+            </div> -->
+          </div>
+      </div>
+      <div class="centerCard">
+        <a id="btn" role="button" class="bg-red-600 hover:bg-red-700 text-white text-sm px-4 py-2  border rounded-full">
+          Bored!
+        </a>
+      </div>
+      <footer class="text-gray-400 bg-gray-900 body-font">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+          <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+          </a>
+          <p id="date" class="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">© 2020 I'm bored —</p>
+            <a href="https://twitter.com/zippytyro" class="text-gray-500 ml-1" target="_blank" rel="noopener">@zippytyro</a>
+        </div>
+      </footer>
       <script src="script.js"></script>
 </body>
 </html>
