@@ -15,7 +15,6 @@ function getActivity(){
 
 // Puts the data on the UI and calls another function which makes the para visible.
 function showResponse(data){
-    console.log(data);
     activity.innerHTML = data.activity;
     participants.innerHTML = data.participants;
     type.innerHTML = data.type;
