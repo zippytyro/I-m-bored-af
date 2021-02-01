@@ -5,16 +5,29 @@ const participants  = document.getElementById('participants');
 const type  = document.getElementById('type');
 const paragraph  = document.getElementById('paragraph');
 const date = document.getElementById('date');
-
+const endpoint = " https://boredapi.com/api/activity";
 // fetching the data from the API
 function getActivity(){
-    fetch('https://boredapi.com/api/activity')
-  .then(response => response.json()) 
-  .then(data => showResponse(data)); // passing the data as a parameter to a function which displays the data.
+//     fetch('https://boredapi.com/api/activity')
+//   .then(response => response.json()) 
+//   .then(data => showResponse(data)); 
+  $.ajax({
+    url:endpoint,
+    type: "GET",
+    success: function(result){
+        console.log(result);
+        showResponse(result);
+    },
+    error: function(){
+        console.log(error);
+    }
+});
+  // passing the data as a parameter to a function which displays the data.
 }
 
 // Puts the data on the UI and calls another function which makes the para visible.
 function showResponse(data){
+    console.log(data);
     activity.innerHTML = data.activity;
     participants.innerHTML = data.participants;
     type.innerHTML = data.type;
