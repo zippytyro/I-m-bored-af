@@ -210,6 +210,7 @@ const tweet = document.getElementById('tweet');
 function getActivity(){
     let random = Math.round(Math.random()*196)+1;
     let activity = data[random];
+    // Sending the activity
     showResponse(activity);
 }
 
@@ -219,12 +220,12 @@ function showResponse(data){
     activity.innerHTML = data.activity;
     participants.innerHTML = data.participants;
     type.innerHTML = data.type;
-    if(data.link === ""){
-        url = ""
+    if(data.link == ""){
+        url = "";
     } else {
-        data.link = url;
+        url = data.link;
     }
-    tweet.href = "https://twitter.com/intent/tweet/?text=Bored? "+data.activity+"&hashtags="+data.type+" "+url+ " Im-bored.now.sh";
+    tweet.href = "https://twitter.com/intent/tweet/?text=Bored? "+data.activity+"&hashtags="+data.type+" "+url+ " (Im-bored.now.sh)";
     showParagraph();
 }
 
