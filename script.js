@@ -204,6 +204,7 @@ const participants  = document.getElementById('participants');
 const type  = document.getElementById('type');
 const paragraph  = document.getElementById('paragraph');
 const date = document.getElementById('date');
+const tweet = document.getElementById('tweet');
 
 // fetching the data from the API
 function getActivity(){
@@ -214,9 +215,16 @@ function getActivity(){
 
 // Puts the data on the UI and calls another function which makes the para visible.
 function showResponse(data){
+    let url = "";
     activity.innerHTML = data.activity;
     participants.innerHTML = data.participants;
     type.innerHTML = data.type;
+    if(data.link === ""){
+        url = ""
+    } else {
+        data.link = url;
+    }
+    tweet.href = "https://twitter.com/intent/tweet/?text=Bored? "+data.activity+"&hashtags="+data.type+" "+url+ " Im-bored.now.sh";
     showParagraph();
 }
 

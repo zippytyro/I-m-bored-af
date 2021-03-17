@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="./media/bored.svg" type="image/x-icon">
+    <!-- Tailwind CDN -->
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>I'm bored af</title>
+    <title>I'm bored</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,14 +16,9 @@
           </nav>
           <a class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-white lg:items-center lg:justify-center mb-4 md:mb-0">
             <img width="45" src="./media/bored.svg" alt="">
-            <span class="ml-3 text-xl xl:block lg:hidden">I'm bored af</span>
+            <span class="ml-3 text-xl xl:block lg:hidden">I'm bored</span>
           </a>
           <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
-            <!-- <button class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Button
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-                <path d="M5 12h14M12 5l7 7-7 7"></path>
-              </svg>
-            </button> -->
           </div>
         </div>
       </header>
@@ -31,18 +27,35 @@
             <img class="w-full" src="https://source.unsplash.com/1600x900/?nature,water,coding,india" alt="Card Image">
             <div class="px-6 py-4">
               <div id="activity" class="font-bold text-xl mb-2">Press bored button below</div>
-              <p id="paragraph" class="text-grey-darker text-base">This is a <span id="type"></span> activity and requires <span id="participants"></span> participant(s).</p>
+              <p id="paragraph" class="text-grey-darker text-base">This is a <span id="type"></span> activity and requires <span id="participants"></span> participant(s). </p>
             </div>
-            <!-- <div class="px-6 py-4">
-              <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2"></span>
-              <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">Accessibility</span>
-              <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker">#winter</span>
-            </div> -->
           </div>
       </div>
       <div class="centerCard">
-        <a id="btn" role="button" class="bg-red-600 hover:bg-red-700 text-white text-sm px-4 py-2  border rounded-full">
+        <a id="btn" role="button" class="bg-red-600 hover:bg-red-700 text-white text-md px-4 py-2  border rounded-full">
           Bored!
+        <a/>
+        <a target="_blank" id="tweet" role="button" class="bg-blue-600 hover:bg-blue-700 text-white text-md px-4 py-2  border rounded-full">
+          Tweet <svg viewBox="328 355 335 276" xmlns="http://www.w3.org/2000/svg">
+            <path d="
+              M 630, 425
+              A 195, 195 0 0 1 331, 600
+              A 142, 142 0 0 0 428, 570
+              A  70,  70 0 0 1 370, 523
+              A  70,  70 0 0 0 401, 521
+              A  70,  70 0 0 1 344, 455
+              A  70,  70 0 0 0 372, 460
+              A  70,  70 0 0 1 354, 370
+              A 195, 195 0 0 0 495, 442
+              A  67,  67 0 0 1 611, 380
+              A 117, 117 0 0 0 654, 363
+              A  65,  65 0 0 1 623, 401
+              A 117, 117 0 0 0 662, 390
+              A  65,  65 0 0 1 630, 425
+              Z"
+              style="fill:#3BA9EE;"/>
+          </svg>
+          
         <a/>
       </div>
       <footer class="text-gray-400 bg-gray-900 body-font">
@@ -50,7 +63,7 @@
           <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
           </a>
           <p id="date" class="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">© 2020 I'm bored —</p>
-            <a href="https://twitter.com/zippytyro" class="text-gray-500 ml-1" target="_blank" rel="noopener">@zippytyro</a>
+            <a href="https://twitter.com/intent/follow?screen_name=zippytyro" class="text-gray-500 ml-1" target="_blank" rel="noopener">@zippytyro</a>
         </div>
       </footer>
       <script src="script.js"></script>
