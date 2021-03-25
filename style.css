@@ -22,4 +22,7 @@ footer {
 svg {
     display: inline-block;
     height: 16.5px;
-  }
+}
+#link{
+    color: rgb(45, 42, 231);
+}
