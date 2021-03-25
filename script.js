@@ -204,6 +204,7 @@ const activity = document.getElementById('activity');
 const participants  = document.getElementById('participants');
 const type  = document.getElementById('type');
 const paragraph  = document.getElementById('paragraph');
+const links = document.getElementById("link");
 const date = document.getElementById('date');
 const tweet = document.getElementById('tweet');
 
@@ -225,6 +226,8 @@ function showResponse(data){
         url = "";
     } else {
         url = data.link;
+        links.href = data.link;
+        links.innerHTML = data.link.substring(0, 17)+"...";
     }
     tweet.href = "https://twitter.com/intent/tweet/?text=Bored? "+data.activity+"&hashtags="+data.type+" "+url+ " (Im-bored.now.sh)";
     showParagraph();
