@@ -32,20 +32,20 @@ function showResponse(data){
     } else {
         url = data.link;
         link.href = url;
-        link.innerHTML = url.substring(0, 20)+"...";
+        link.innerHTML =  "&#x1f517; "+url.substring(0, 20)+"...";
     }
     tweet.href = "https://twitter.com/intent/tweet/?text=Bored? "+data.activity+"&hashtags="+data.type+" "+url+ " (Im-bored.now.sh)";
-    showParagraph();
+    showContent();
 }
 
-function showParagraph(){
+function showContent(){
     paragraph.style.visibility = "visible";
 }
 // Click event listner.
 boredButton.addEventListener("click", function(){
     getActivity();
 });
-
+// Get latest year for footer.
 function getDate(){
     let currentdate = new Date().getFullYear();
     return currentdate;
