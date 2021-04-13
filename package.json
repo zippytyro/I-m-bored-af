@@ -2,9 +2,8 @@
   "name": "imbored",
   "version": "1.0.0",
   "description": "Got bored? Explore awesome stuff to do by other people.",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +19,7 @@
   },
   "homepage": "https://github.com/zippytyro/I-m-bored-af#readme",
   "dependencies": {
+    "@vercel/node": "^1.9.1",
     "express": "^4.17.1",
     "mongoose": "^5.12.3"
   }
