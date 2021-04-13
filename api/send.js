@@ -1,5 +1,5 @@
 // jshint esversion: 6
-const data  = require("../data");
+const data  = require("../public/data");
 
 module.exports =  (req, res) => {
   if (req.method == "GET") {
