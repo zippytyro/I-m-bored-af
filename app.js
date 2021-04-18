@@ -7,11 +7,12 @@ const ejs = require("ejs");
 const app = express();
 const port = process.env.PORT || 3000;
 
+app.set("view engine", "ejs");
 app.use(express.json());
 app.use(express.urlencoded({
   extended: true
 }));
-express.static("public");
+app.use(express.static("public"));
 app.get("/", (req, res)=>{
    res.sendFile(__dirname + "./public/index.html");
 });
@@ -20,6 +21,17 @@ app.get("/api", (req, res)=>{
     res.send(api.sendData());
 });
 
+app.get("/i", (req, res)=>{
+  res.render("index");
+});
+
+app.post("/i", (req, res)=>{
+  console.log(req.body);
+});
+
+app.get("/*", (req, res)=>{
+  res.send("LOL Not found");
+});
 
 app.listen(port, ()=>{
     console.log("Server running at 3000");
