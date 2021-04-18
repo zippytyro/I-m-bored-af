@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <!-- Tailwind CDN -->
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="./assets/android-chrome-512x512.png" type="image/x-icon">
     <meta charset="UTF-8">
     <link
@@ -10,175 +12,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/login.css">
     <link rel="stylesheet" href="../css/loader.css">
-
-       <!-- Primary Meta Tags -->
+<!-- Primary Meta Tags -->
 <meta name="title" content="Teachers Bay">
 <meta name="description" content="Teachers' bay is a platform which gives the power to the students to give constructive feedback to their teachers.">
-
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://teachersbay.herokuapp.com/login">
 <meta property="og:title" content="Teachers Bay">
 <meta property="og:description" content="Teachers' bay is a platform which gives the power to the students to give constructive feedback to their teachers.">
 <meta property="og:image" content="https://teachersbay.herokuapp.com/assets/metaimg.PNG">
-
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:url" content="https://teachersbay.herokuapp.com/login">
 <meta property="twitter:title" content="Teachers Bay">
 <meta property="twitter:description" content="Teachers' bay is a platform which gives the power to the students to give constructive feedback to their teachers.">
 <meta property="twitter:image" content="https://teachersbay.herokuapp.com/assets/metaimg.PNG">
-    <title>Teachers Bay - Log In</title>
-    <style>
-        :root {
-  --dark-purple: #392f5a;
-  --purple: #ab81cd;
-  --light-purple: #e2adf2;
-  --white: #eff6e0;
-  --sky: #02a9ea;
-}
-
-* {
-  margin: 0;
-  padding: 0;
+    <title>I'm Bored!</title>
+<style>
+  html, body {
+  height: 100%
 }
 
 body {
-  font-size: 10px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 100 60'%3E%3Cg %3E%3Crect fill='%23eff6e0' width='11' height='11'/%3E%3Crect fill='%23f0f6df' x='10' width='11' height='11'/%3E%3Crect fill='%23f0f6de' y='10' width='11' height='11'/%3E%3Crect fill='%23f1f6de' x='20' width='11' height='11'/%3E%3Crect fill='%23f2f5dd' x='10' y='10' width='11' height='11'/%3E%3Crect fill='%23f3f5dc' y='20' width='11' height='11'/%3E%3Crect fill='%23f4f5db' x='30' width='11' height='11'/%3E%3Crect fill='%23f5f5da' x='20' y='10' width='11' height='11'/%3E%3Crect fill='%23f5f4da' x='10' y='20' width='11' height='11'/%3E%3Crect fill='%23f5f3d9' y='30' width='11' height='11'/%3E%3Crect fill='%23f5f1d8' x='40' width='11' height='11'/%3E%3Crect fill='%23f5f0d7' x='30' y='10' width='11' height='11'/%3E%3Crect fill='%23f4eed6' x='20' y='20' width='11' height='11'/%3E%3Crect fill='%23f4edd6' x='10' y='30' width='11' height='11'/%3E%3Crect fill='%23f4ebd5' y='40' width='11' height='11'/%3E%3Crect fill='%23f4e9d4' x='50' width='11' height='11'/%3E%3Crect fill='%23f4e8d3' x='40' y='10' width='11' height='11'/%3E%3Crect fill='%23f4e6d2' x='30' y='20' width='11' height='11'/%3E%3Crect fill='%23f4e4d1' x='20' y='30' width='11' height='11'/%3E%3Crect fill='%23f4e2d1' x='10' y='40' width='11' height='11'/%3E%3Crect fill='%23f4e0d0' y='50' width='11' height='11'/%3E%3Crect fill='%23f3decf' x='60' width='11' height='11'/%3E%3Crect fill='%23f3dcce' x='50' y='10' width='11' height='11'/%3E%3Crect fill='%23f3dacd' x='40' y='20' width='11' height='11'/%3E%3Crect fill='%23f3d7cc' x='30' y='30' width='11' height='11'/%3E%3Crect fill='%23f3d5cc' x='20' y='40' width='11' height='11'/%3E%3Crect fill='%23f3d3cb' x='10' y='50' width='11' height='11'/%3E%3Crect fill='%23f3d0ca' x='70' width='11' height='11'/%3E%3Crect fill='%23f3cec9' x='60' y='10' width='11' height='11'/%3E%3Crect fill='%23f3cbc8' x='50' y='20' width='11' height='11'/%3E%3Crect fill='%23f3c8c7' x='40' y='30' width='11' height='11'/%3E%3Crect fill='%23f3c6c7' x='30' y='40' width='11' height='11'/%3E%3Crect fill='%23f3c6c8' x='20' y='50' width='11' height='11'/%3E%3Crect fill='%23f3c5ca' x='80' width='11' height='11'/%3E%3Crect fill='%23f3c4cb' x='70' y='10' width='11' height='11'/%3E%3Crect fill='%23f2c3cc' x='60' y='20' width='11' height='11'/%3E%3Crect fill='%23f2c2ce' x='50' y='30' width='11' height='11'/%3E%3Crect fill='%23f2c1cf' x='40' y='40' width='11' height='11'/%3E%3Crect fill='%23f2c0d0' x='30' y='50' width='11' height='11'/%3E%3Crect fill='%23f2bfd2' x='90' width='11' height='11'/%3E%3Crect fill='%23f2bed4' x='80' y='10' width='11' height='11'/%3E%3Crect fill='%23f2bed5' x='70' y='20' width='11' height='11'/%3E%3Crect fill='%23f2bdd7' x='60' y='30' width='11' height='11'/%3E%3Crect fill='%23f2bcd9' x='50' y='40' width='11' height='11'/%3E%3Crect fill='%23f2bbdb' x='40' y='50' width='11' height='11'/%3E%3Crect fill='%23f2badd' x='90' y='10' width='11' height='11'/%3E%3Crect fill='%23f2b9df' x='80' y='20' width='11' height='11'/%3E%3Crect fill='%23f2b8e1' x='70' y='30' width='11' height='11'/%3E%3Crect fill='%23f2b7e4' x='60' y='40' width='11' height='11'/%3E%3Crect fill='%23f2b6e6' x='50' y='50' width='11' height='11'/%3E%3Crect fill='%23f2b5e8' x='90' y='20' width='11' height='11'/%3E%3Crect fill='%23f2b4eb' x='80' y='30' width='11' height='11'/%3E%3Crect fill='%23f2b4ee' x='70' y='40' width='11' height='11'/%3E%3Crect fill='%23f2b3f0' x='60' y='50' width='11' height='11'/%3E%3Crect fill='%23f1b2f2' x='90' y='30' width='11' height='11'/%3E%3Crect fill='%23eeb1f2' x='80' y='40' width='11' height='11'/%3E%3Crect fill='%23ebb0f2' x='70' y='50' width='11' height='11'/%3E%3Crect fill='%23e8aff2' x='90' y='40' width='11' height='11'/%3E%3Crect fill='%23e5aef2' x='80' y='50' width='11' height='11'/%3E%3Crect fill='%23e2adf2' x='90' y='50' width='11' height='11'/%3E%3C/g%3E%3C/svg%3E");
-  background-attachment: fixed;
-  background-size: cover;
-}
-
-nav {
-  width: 100%;
-  text-align: center;
-  background-color: var(--light-purple);
-  position: fixed;
-  padding: 0.5em;
-  top: 0;
-}
-
-nav a {
-  text-decoration: none;
-  font-size: 2.5em;
-  font-family: "lato", sans-serif;
-  color: var(--dark-purple);
-}
-
-main {
-  width: 80%;
-  margin: 0 auto;
-  padding-top: 15em;
-  font-family: "lato", sans-serif;
-}
-
-main > h2 {
-  font-size: 3.5em;
-  font-family: "Anonymous Pro", serif;
-  color: var(--purple);
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 form {
-  width: 90%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  margin-top: 5rem;
-}
-
-form > input {
-  margin-bottom: 1.4em;
-  font-size: 1.8em;
-  width: 100%;
-  border: none;
-  outline: none;
-  padding: 10px;
-}
-
-input:focus {
-  border-bottom: 2px solid var(--purple);
-  height: -2px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 400px;
 }
 
 button {
-  font-size: 1.8em;
-  width: 50%;
-  cursor: pointer;
-  margin: 0 auto;
-  border: none;
-  outline: none;
-  background-color: var(--dark-purple);
-  color: white;
-  border-radius: 10px;
-  padding: 10px;
+  width: 100%
 }
-
-button:hover,
-button:focus {
-  box-shadow: 1.5px 1.5px 25px var(--dark-purple);
-}
-
-.message {
-  font-size: 1.5em;
-  margin-bottom: 1em;
-  text-align: center;
-}
-
-section {
-  text-align: center;
-  margin-top: 2em;
-}
-
-section > p {
-  font-size: 1.5em;
-  color: grey;
-}
-
-section a {
-  text-decoration: none;
-  color: var(--dark-purple);
-}
-
-@media screen and (min-width: 600px) {
-  main {
-    width: 45%;
-  }
-}
-
-@media screen and (min-width: 800px) {
-  main {
-    width: 35%;
-  }
-
-  form {
-    width: 100%;
-  }
-}
-
-    </style>
+</style>
 </head>
 
 <body>
-    <span id="loader"></span>
-    <nav>
-        <h1><a href="/">Teachers Bay</a></h1>
-    </nav>
-    <main>
-        <h2>Log in</h2>
-        <form action="/i" method="post">
-            <input required placeholder="E-mail" type="email" name="username">
-            <input required placeholder="Password" type="password" name="password">
-            <button type="submit" name="btn">
-                Log In
-            </button>
-        </form>
-        <section>
-            <p>Not registered yet? <a href="/register">Register</a></p>
-        </section>
-    </main>
-    <script src="../scripts/script.js"></script>
+  <form action="/submit" method="POST">
+    <div class="mb-4">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="name">
+          Name
+        </label>
+      <input name="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Text input">
+    </div>
+    <div class="mb-4">
+      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-state">
+          Subject
+        </label>
+      <div class="relative">
+        <select name="type" class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+          <option disabled>Select dropdown</option>
+          <option value="Recreational">Recreational</option>
+          <option value="Educational">Educational</option>
+          <option value="Entertaining">Entertaining</option>
+          </select>
+        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+          <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+        </div>
+      </div>
+    </div>
+    <div class="mb-4">
+      <label class="block">
+        <input class="mr-2 leading-tight" type="checkbox">
+        <span class="text-sm">
+          I agree this
+        </span>
+      </label>
+    </div>
+    <div class="mb-4">
+      <label class="inline-flex items-center">
+        <input type="radio" class="form-radio"  value="1">
+        <span class="ml-2">Yes</span>
+      </label>
+      <label class="inline-flex items-center ml-6">
+        <input type="radio" class="form-radio" value="2">
+        <span class="ml-2">No</span>
+      </label>
+    </div>
+    <div class="mb-4">
+      <label class="block text-gray-700 text-sm font-bold mb-2">
+    Activity
+    <textarea name="activity" class="shadow form-textarea mt-1 block w-full border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" rows="5" placeholder="Textarea"></textarea>
+  </label>
+    </div>
+    <div class="flex items-center justify-between">
+      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+          Submit
+        </button>
+    </div>
+  </form>
 </body>
 
 </html>

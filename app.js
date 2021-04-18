@@ -2,30 +2,36 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const api  = require("./controller/api");
-const path = require("path");
 const ejs = require("ejs");
+const fs = require("fs");
 const app = express();
 const port = process.env.PORT || 3000;
 
+// Global variables
+let rewriteCounts = 0;
 app.set("view engine", "ejs");
 app.use(express.json());
 app.use(express.urlencoded({
   extended: true
 }));
 app.use(express.static("public"));
+
+// GET  for /
 app.get("/", (req, res)=>{
-   res.sendFile(__dirname + "./public/index.html");
-});
-
-app.get("/api", (req, res)=>{
-    res.send(api.sendData());
-});
-
-app.get("/i", (req, res)=>{
   res.render("index");
 });
 
-app.post("/i", (req, res)=>{
+app.get("/api/v1", (req, res)=>{
+    let data = api.sendData();
+    res.send(data);
+    // fs.appendFileSync('data.json', data);
+});
+
+app.get("/submit", (req, res)=>{
+  res.render("submit");
+});
+
+app.post("/submit", (req, res)=>{
   console.log(req.body);
 });
 

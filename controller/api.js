@@ -7,7 +7,6 @@ const sendData = ()=>{
     let random = Math.floor((Math.random() * length-1));
     let activity =  data[random];
     activity = JSON.stringify(activity);
-    console.log(activity);
     return activity;
 };
 

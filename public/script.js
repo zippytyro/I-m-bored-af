@@ -13,8 +13,8 @@ const tweet = document.getElementById('tweet');
 
 // fetching the data from the API
 function getActivity(){
-    let length = data.length;
-    let random = Math.floor(Math.random()*length)+1;
+    let length = data.length-2;
+    let random = Math.floor(Math.random()*length);
     let activity = data[random];
     // Sending the activity
     showResponse(activity);

@@ -1,9 +1,15 @@
+html, body{
+    padding: 0;
+    margin:0p;
+}
 .centerCard {
     display: flex;
     justify-content: center;
     align-content: center;
 }
-
+.mainCard{
+    margin-bottom:4em;
+}
 a,
 button {
     outline: hidden;
