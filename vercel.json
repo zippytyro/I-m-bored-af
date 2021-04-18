@@ -1,17 +1,10 @@
 {
-  "name": "my-mongodb-api",
+  "name": "my-api",
   "version": 2,
-  "env": {
-    "MONGODB_URI": "@my-mongodb-uri"
-  },
     "routes":[
         {
             "src": "/api",
             "dest": "/api/send.js"
-        },
-        {
-            "src":"/api/submit",
-            "dest":"/api/receive.js"
         }
     ]
 }

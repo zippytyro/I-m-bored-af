@@ -7,5 +7,8 @@ module.exports =  (req, res) => {
     let random = Math.floor(Math.random()*length)+1;
     let activity = data[random];
     res.send(JSON.stringify(activity));
+  } else if(req.method == "POST"){
+    const sentData = req.body;
+    console.log(sentData);
   }
 };
