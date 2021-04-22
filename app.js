@@ -1,14 +1,15 @@
 // jshint esversion: 6
+require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 const api  = require("./controller/api");
 const ejs = require("ejs");
+const data = require("./data.js");
 const fs = require("fs");
 const app = express();
 const port = process.env.PORT || 3000;
 
 // Global variables
-let rewriteCounts = 0;
 app.set("view engine", "ejs");
 app.use(express.json());
 app.use(express.urlencoded({
@@ -16,6 +17,17 @@ app.use(express.urlencoded({
 }));
 app.use(express.static("public"));
 
+// Mongodb database
+// mongoose.connect(process.env.DB_URL, {
+//   useNewUrlParser: true,
+//   useUnifiedTopology: true,
+// });
+// connecting mongoDB locally.
+
+mongoose.connect("mongodb://localhost:3000:27017/teachersBayDB", {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+});
 // GET  for /
 app.get("/", (req, res)=>{
   res.render("index");
@@ -42,3 +54,8 @@ app.get("/*", (req, res)=>{
 app.listen(port, ()=>{
     console.log("Server running at 3000");
 });
+
+
+for(let i=0; i<data.length; i++){
+    console.log(`${data[i]}  ${i}`);
+}

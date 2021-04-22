@@ -1,5 +1,11 @@
 [
-    {"activity":"Hold a video game tournament with some friends","availability":0.1,"type":"social","participants":4,"price":0,"accessibility":"Few to no challenges","duration":"hours","kidFriendly":true,"link":"","key":"2300257"},
-    {"activity":"Prepare a dish from a foreign culture","availability":0.3,"type":"cooking","participants":1,"price":0.2,"accessibility":"Few to no challenges","duration":"hours","kidFriendly":true,"link":"","key":"8061754"},
-    {"activity":"Take a bubble bath","availability":0.1,"type":"relaxation","participants":1,"price":0.15,"accessibility":"'Minor challenges","duration":"minutes","kidFriendly":true,"link":"","key":"2581372"}
+    {
+        "_id":"fdoifsafoi34kasdfjdajsfqweq",
+        "activity":"Learn to make origimi art",
+        "type":"education",
+        "participants":1,
+        "accessibility":"Few to no challenges",
+        "duration":"hours",
+        "link":"https://origami.com/"
+    }
 ]

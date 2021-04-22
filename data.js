@@ -8,7 +8,7 @@ const data =  [
     ,{"activity":"Learn how to fold a paper crane","availability":0.05,"type":"education","participants":1,"price":0.1,"accessibility":"Minor challenges","duration":"minutes","kidFriendly":true,"link": "","key":"3136036"}
     ,{"activity":"Find a DIY to do","availability":0.3,"type":"diy","participants":1,"price":0.4,"accessibility":"Few to no challenges","duration":"minutes","kidFriendly":true,"link":"","key":"4981819"}
     ,{"activity":"Learn about the Golden Ratio","availability":0.2,"type":"education","participants":1,"price":0.1,"accessibility":"Few to no challenges","duration":"minutes","kidFriendly":true,"link":"https://en.wikipedia.org/wiki/Golden_ratio","key":"2095681"}
-    ,{"activity":"Volunteer at a local animal shelter","availability":0.5,"type":"charity","participants":1,"price":0.1,"accessibility":"Minor challenges","duration":"hours","kidFriendly":true,"link":"","key":"1382389"}
+    ,{"activity":"Volunteer at a local animal shelter","availability":0.5,"type":"charity","participants":1,"price":0.1,"accessibility":"Minor challenges","duration":"hours","kidFriendly":true,"link":"","key":"1382389"},
     ,{"activity":"Play a game of Monopoly","availability":0.3,"type":"social","participants":4,"price":0.2,"accessibility":"Few to no challenges","duration":"hours","kidFriendly":true,"link":"","key":"1408058"}
     ,{"activity":"Bake pastries for you and your neighbor","availability":0.3,"type":"cooking","participants":1,"price":0.4,"accessibility":"Minor challenges","duration":"hours","kidFriendly":true,"link":"","key":"8125168"}
     ,{"activity":"Bake something you've never tried before","availability":0.3,"type":"cooking","participants":1,"price":0.4,"accessibility":"Minor challenges","duration":"hours","kidFriendly":true,"link":"","key":"5665663"}
@@ -29,10 +29,19 @@ const data =  [
     ,{"activity":"Draw and color a Mandala","availability":0.1,"type":"relaxation","participants":1,"price":0.05,"accessibility":"Few to no challenges","duration":"minutes","kidFriendly":true,"link":"https://en.wikipedia.org/wiki/Mandala","key":"4614092"}
     ,{"activity":"Rearrange and organize your room","availability":0.15,"type":"busywork","participants":1,"price":0.0,"accessibility":"Minor challenges","duration":"minutes","kidFriendly":true,"link":"","key":"6197243"}
     ,{"activity":"Pot some plants and put them around your house","availability":0.3,"type":"relaxation","participants":1,"price":0.4,"accessibility":"Few to no challenges","duration":"minutes","kidFriendly":true,"link":"","key":"6613330"},
-    ,{"activity":"Plan a vacation you've always wanted to take","availability":0.05,"type":"relaxation","participants":1,"price":0.0,"accessibility":"Few to no challenges","duration":"minutes","kidFriendly":true,"link":"","key":"7265395"},
-    ,{"activity":"Take your cat on a walk","availability":0.1,"type":"relaxation","participants":1,"price":0.02,"accessibility":"Few to no challenges","duration":"minutes","kidFriendly":true,"link":"","key":"5940465"}
+    {
+        "activity":"Plan a vacation you've always wanted to take",
+        "availability":0.05,
+        "type":"relaxation",
+        "participants":1,
+        "price":0.0,
+        "accessibility":"Few to no challenges",
+        "duration":"minutes","kidFriendly":true,"link":"",
+        "key":"7265395"
+    },
+    {"activity":"Take your cat on a walk","availability":0.1,"type":"relaxation","participants":1,"price":0.02,"accessibility":"Few to no challenges","duration":"minutes","kidFriendly":true,"link":"","key":"5940465"}
     ,{"activity":"Have a football scrimmage with some friends","availability":0.2,"type":"social","participants":8,"price":0,"accessibility":"Major challenges","duration":"minutes","kidFriendly":true,"link":"","key":"1638604"},
-    ,{"activity":"Fill out a basketball bracket","availability":0.1,"type":"recreational","participants":1,"price":0,"accessibility":"Few to no challenges","duration":"minutes","kidFriendly":true,"link":"","key":"7806284"}
+    {"activity":"Fill out a basketball bracket","availability":0.1,"type":"recreational","participants":1,"price":0,"accessibility":"Few to no challenges","duration":"minutes","kidFriendly":true,"link":"","key":"7806284"}
     ,{"activity":"Play a game of tennis with a friend","availability":0.4,"type":"social","participants":2,"price":0.1,"accessibility":"Major challenges","duration":"minutes","kidFriendly":true,"link":"","key":"1093640"}
     ,{"activity":"Catch up with a friend over a lunch date","availability":0.15,"type":"social","participants":2,"price":0.2,"accessibility":"Few to no challenges","duration":"hours","kidFriendly":true,"link":"","key":"5590133"}
     ,{"activity":"Learn how to iceskate or rollerskate","availability":0.25,"type":"recreational","participants":1,"price":0.1,"accessibility":"Major challenges","duration":"days","kidFriendly":true,"link":"","key":"5947957"}
@@ -48,7 +57,7 @@ const data =  [
     ,{"activity":"Learn a new recipe","availability":0.05,"type":"cooking","participants":1,"price":0.0,"accessibility":"Few to no challenges","duration":"minutes","kidFriendly":true,"link":"","key":"6553978"}
     ,{"activity":"Create a cookbook with your favorite recipes","availability":0.05,"type":"cooking","participants":1,"price":0.0,"accessibility":"Few to no challenges","duration":"hours","kidFriendly":true,"link":"","key":"1947449"}
     ,{"activity":"Create a compost pile","availability":0.15,"type":"diy","participants":1,"price":0.0,"accessibility":"Major challenges","duration":"hours","kidFriendly":true,"link":"","key":"8631548"},
-    ,{"activity":"Volunteer at your local food bank","availability":0.1,"type":"charity","participants":1,"price":0.0,"accessibility":"Few to no challenges","duration":"hours","kidFriendly":true,"link":"","key":"2055368"}
+    {"activity":"Volunteer at your local food bank","availability":0.1,"type":"charity","participants":1,"price":0.0,"accessibility":"Few to no challenges","duration":"hours","kidFriendly":true,"link":"","key":"2055368"}
     ,{"activity":"Create or update your resume","availability":0.1,"type":"busywork","participants":1,"price":0.0,"accessibility":"Minor challenges","duration":"minutes","kidFriendly":true,"link":"","key":"9364041"}
     ,{"activity":"Paint the first thing you see","availability":0.2,"type":"recreational","participants":1,"price":0.25,"accessibility":"Minor challenges","duration":"minutes","kidFriendly":true,"link":"","key":"1162360"}
     ,{"activity":"Start a blog for something you're passionate about","availability":0.1,"type":"recreational","participants":1,"price":0.05,"accessibility":"Minor challenges","duration":"hours","kidFriendly":true,"link":"","key":"8364626"}
